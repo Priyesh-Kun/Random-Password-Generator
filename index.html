@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6536a91552.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="main">
+        <p>Generate a <br><span>Random Password</span></p>
+        <div class="generated">
+            <input type="text"  id="generated" placeholder="Password">
+            <i class="fa-solid fa-copy " id="input_click" onclick="copy()"></i>
+        </div>
+        <button class="btn" id="btn"><i class="fa-solid fa-bolt " ></i> Generate</button>
+        <button class="copy" id="btn_copy" onclick="copy()"><i class="fa-solid fa-copy " onclick="copy()" style="color:#fff"></i>Copy</button>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

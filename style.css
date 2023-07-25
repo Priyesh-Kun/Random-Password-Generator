@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(0deg, rgb(16, 47, 88),rgb(14, 28, 54));
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh ;
+    /* display: block; */
+}
+.main{
+    padding: 30vh 30vw 0vh 10vw;
+    /* padding-top: 40vh; */
+    display: grid;
+    margin: 0;
+    /* justify-content: center; */
+    align-content: center;
+}
+p{
+    color: #fff;
+    margin-bottom: 4vh;
+}
+p span{
+    color: #0f813b;
+    /* text-decoration: underline; */
+    padding-bottom: 3px;
+    border-bottom: solid #0f813b;
+}
+
+input{
+    border: 0;
+    outline: none;
+    padding: 20px ;
+    width: 53vw;
+    border-radius: 7px;
+    font-size: 20px;
+    font-weight: 400;
+    z-index: 1;
+}
+button{
+    border: 0;
+    border-radius: 7px;
+    background-color: #0f813b;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    width: 250px;
+    padding: 1vh 1vw;
+    margin: 3vh 0px;
+}
+.generated{
+    display: block;
+    overflow: hidden;
+    
+}
+.fa-copy{
+    position: relative;
+    left: -77px;
+    top: 7px;
+    color: #0f813b;
+    font-weight: 100;
+    z-index: 2;
+    /* font-size: ; */
+    /* margin-bottom: 30px; */
+}
+.fa-bolt{
+    font-size: 20px;
+    /* font-weight: 300; */
+}
+
+#btn_copy{
+    display: none;
+}
+@media  only screen and (max-width : 728px )and ( min-width:618px) {
+    input{
+        width: 51vw;
+    }
+}
+@media  only screen and (max-width : 617px ) and  (min-width: 470px) {
+    *{
+        font-size: 25px;
+    }
+    input{
+        font-size: 15px;
+        width: 250px;
+    }
+    .fa-copy{
+        left: -47px;
+        top: 4px;
+    }
+    button{
+        font-size: 15px;
+        width: 175px;
+    }
+}
+
+@media  only screen and (max-width : 470px ) and (min-width: 391px){
+    *{
+        font-size: 25px;
+    }
+    input{
+        font-size: 15px;
+        width: 51vw;
+    }
+    .fa-copy{
+        font-size: 15px;
+        position: relative;
+        left: -5px;
+        top: 0px;
+    }
+    #input_click{
+        display: none;
+    }
+    button{
+        font-size: 15px;
+        width: 175px;
+        margin-top: 8px ;
+        margin-bottom: 0px;
+
+    }
+    #btn_copy{
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 390px) {
+    *{
+        font-size: 20px;
+    }
+    input{
+        font-size: 15px;
+        width: 51vw;
+    }
+    .fa-copy{
+        font-size: 15px;
+        position: relative;
+        left: -5px;
+        top: 0px;
+    }
+    #input_click{
+        display: none;
+    }
+    button{
+        font-size: 15px;
+        width: 175px;
+        margin-top: 8px ;
+        margin-bottom: 0px;
+    
+    }
+    #btn_copy{
+        display: block;
+    }
+}
